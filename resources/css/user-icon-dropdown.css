@@ -1,0 +1,8 @@
+#user .changePass:hover, #user .logout-user:hover{
+    background: #f9f9f9;
+    cursor: pointer;
+}
+#user .changePass:hover p, #user .logout-user:hover p{
+    color: #176CBF;
+    text-decoration: none;
+}

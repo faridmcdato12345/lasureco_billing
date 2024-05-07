@@ -1,0 +1,59 @@
+input {
+    color: black;
+}
+@media screen and (min-width:1681px) and (max-width: 1920px) {
+    .profPic {
+        top: 7%;
+    }
+    #user .modal-content{
+        height: 14%!important;
+    }
+    input {
+        height: 50px;
+    }
+    .main {
+        font-size: 22px;
+    }
+    .content-table {
+        height: 200px;
+    }
+}
+@media screen and (min-width:1601px) and (max-width: 1680px) {
+    .content-table {
+        height: 175px;
+    }
+}
+@media screen and (min-width:1441px) and (max-width: 1600px) {
+    .content-table {
+        height: 167px;
+    }
+}
+@media screen and (min-width:1401px) and (max-width: 1440px) {
+    .content-table {
+        height: 165px;
+    }
+}
+@media screen and (min-width:1361px) and (max-width: 1400px) {
+    .content-table {
+        height: 125px !important;
+    }
+    .modal .modal-content {
+        margin-top: 0px !important;
+    }
+}
+@media screen and (min-width:1336px) and (max-width: 1360px) {
+    .content-table {
+        height: 160px;
+    }
+}
+@media screen and (min-width:1281px) and (max-width: 1335px) {
+    .content-table {
+        height: 150px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .content-table {
+        height: 120px;
+    }
+}
+

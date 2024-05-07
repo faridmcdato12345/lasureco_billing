@@ -1,0 +1,3357 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import './login.css';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import './user-icon-dropdown.css';
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-bottom: px;
+}
+
+.mainheadertxt {
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: -2px;
+}
+
+.headertxt {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+
+.headertxt2 {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: -1px;
+}
+
+.headerTable {
+    margin-left: 10px;
+}
+
+
+/* Style the header */
+
+.header {
+    background-color: rgb(23, 108, 191);
+    color: white;
+    padding: none;
+    padding-left: none;
+    width: 100%;
+}
+
+.active {
+    background-color: green;
+    color: white;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px;
+    /* only for demonstration, should be removed */
+}
+
+.EMR-table {
+    width: 97%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+.EMR-table h6 {
+    margin-left: 3%;
+    font-size: 1vw;
+}
+
+.consInfoTable {
+    width: 97%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0%;
+    height: 100%
+}
+
+.sidenav a,
+.dropdown-btn,
+.dropdown-btn2,
+.dropdown-btn3,
+.dropdown-btn4 {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 21.5px;
+    color: black;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none !important;
+}
+
+.sidenav .main-menu div {
+    padding: 4% 10%;
+}
+
+.sidenav .main-menu div:hover {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    color: rgb(23, 108, 191);
+}
+
+
+/* On mouse-over */
+
+.sidenav a:hover,
+.dropdown-btn:hover {
+    color: rgb(23, 108, 191);
+}
+
+
+/* Main content */
+
+.main {
+    padding: 0px 10px;
+    overflow-x: hidden;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+/* Add an active class to the active dropdown button */
+
+.active {
+    background-color: rgb(23, 108, 191);
+    color: white;
+}
+
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+
+.dropdown-container {
+    display: none;
+}
+
+.dropdown-container2 {
+    display: none;
+}
+
+.dropdown-container3 {
+    display: none;
+}
+
+.dropdown-container4 {
+    display: none;
+}
+
+
+/* Optional: Style the caret down icon */
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.dropdown-container a,
+.dropdown-container2 a,
+.dropdown-container3 a,
+.dropdown-container4 a {
+    font-size: 12px !important;
+}
+
+.sidenav {
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    border: 1px;
+}
+
+
+/* Clear floats after the columns */
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 600px) {
+    nav,
+    article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.bodytable {
+    width: 100%;
+}
+
+@media screen and (max-width:1980px) {
+    .consDetailTable {
+        margin-top: -40%;
+    }
+    .EMR-table {
+        height: 620px;
+    }
+    .profPic {
+        margin: 0;
+        position: absolute;
+        left: 96%;
+        top: 9%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
+
+@media screen and (max-width:1366px) {
+    .bodytable {
+        height: 585px;
+    }
+    #PMRSCT {
+        margin-top: -4.5%;
+    }
+    .proPic {
+        margin: 0;
+        position: absolute;
+        left: 90%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
+
+@media screen and (max-width:800px) {
+    .headerTable tr:nth-child(3) td:first-child {
+        display: none;
+    }
+    .headerTable tr:nth-child(3) td:nth-child(2) {
+        float: left;
+    }
+}
+
+
+/* .main-td {
+    background-image: url('/img/1.png');
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: 100% 100%;
+    width: 100%;
+} */
+
+.consDetailTable {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.profPic {
+    width: 50px;
+    height: 50px;
+    background-image: url('/img/icon.png');
+    float: right;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: 100% 100%;
+    margin-top: -25px;
+    margin-bottom: -100px;
+    border-radius: 50px 50px 50px 50px;
+    margin-right: -250px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.changePassword {
+    font-size: 15px;
+    height: 40px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.changePassword:hover {
+    background-color: #ddd;
+}
+
+.logout {
+    font-size: 15px;
+    height: 40px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.logout:hover {
+    background-color: #ddd;
+}
+
+.transactionMenu {
+    color: white;
+    background-color: rgb(23, 108, 191);
+    margin-left: 60px;
+    padding: 6px 2px 3px 10px;
+    border: 0;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+.reportMenu {
+    display: inline;
+    color: white;
+    background-color: rgb(23, 108, 191);
+    margin-left: 20px;
+    padding: 6px 2px 3px 10px;
+    border: 0;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+.maintenanceMenu {
+    display: inline;
+    color: white;
+    background-color: rgb(23, 108, 191);
+    margin-left: 20px;
+    padding: 6px 2px 3px 10px;
+    border: 0;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+.inquiryMenu {
+    display: inline;
+    color: white;
+    background-color: rgb(23, 108, 191);
+    margin-left: 20px;
+    padding: 6px 2px 3px 10px;
+    border: 0;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+.utilityMenu {
+    display: inline;
+    color: white;
+    background-color: rgb(23, 108, 191);
+    margin-left: 20px;
+    padding: 6px 2px 3px 2px;
+    border: 0px;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+.PMRSPrintBtn {
+    height: 40px;
+    float: right;
+    margin-right: 8px;
+    background-color: white;
+    color: rgb(23, 108, 191);
+    border: none;
+    border-radius: 3px;
+}
+
+.tranSubMenuDiv {
+    margin-left: -8px;
+    position: absolute;
+    margin-top: -20px;
+    background-color: white;
+    width: 19.9%;
+    height: 40px;
+}
+
+.tranSubMenu {
+    font-size: 2vw;
+    position: absolute;
+    color: blue;
+}
+
+.maintenanceSubMenuDiv {
+    margin-left: -8px;
+    position: absolute;
+    margin-top: -20px;
+    background-color: white;
+    width: 19.9%;
+    height: 40px;
+}
+
+.maintenanceSubMenu {
+    font-size: 2vw;
+    position: absolute;
+    color: blue;
+}
+
+.inquirySubMenuDiv {
+    margin-left: -8px;
+    position: absolute;
+    margin-top: -20px;
+    width: 19.9%;
+    height: 40px;
+}
+
+.inquirySubMenu {
+    font-size: 2vw;
+    position: absolute;
+    color: blue;
+}
+
+.content-heading {
+    color: white;
+    float: left;
+    margin-left: -22%;
+    margin-top: -30%;
+}
+
+.sidebar-td {
+    width: 20%;
+    height: 100px;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    width: 50%;
+    height: 70%;
+}
+
+#user {
+    background: none;
+}
+
+#user .modal-content {
+    float: right;
+    margin-right: 1%;
+    width: 15%;
+    margin-top: -0.5%;
+    height: 300px;
+    animation-name: fade;
+    height: 25%;
+}
+
+.modal-content h3 {
+    width: 100%;
+}
+
+#detailedCharges .modal-content {
+    width: 70%;
+    height: 100%;
+}
+
+.detailedChargesTable {
+    width: 100%;
+    font-size: 15px;
+}
+
+.detailedChargesTable table {
+    width: 99%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.detailedChargesTable td {
+    width: 33.33%;
+    height: 35px;
+}
+
+#userTable {
+    color: black;
+    height: 100%;
+    text-align: center;
+    width: 116%;
+    margin-left: -8%;
+}
+
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+
+/* The Close Button */
+
+.close,
+.closes {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.closes:hover,
+.close:focus,
+.closes:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.famBackInfoBtns td:hover {
+    cursor: pointer;
+}
+
+.modal-button:hover,
+.modal-button:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalBtn {
+    background-color: rgb(23, 108, 191);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    height: 90%;
+}
+
+.modal-header {
+    text-align: center;
+    color: white;
+    background-color: rgb(23, 108, 191);
+}
+
+.modal-body {
+    height: 100%;
+}
+
+.modal-button {
+    color: rgb(23, 108, 191);
+    border: none;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#myBtn {
+    color: rgb(23, 108, 191);
+    border: none;
+    background-color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    height: 36%;
+}
+
+#myBtn2 {
+    color: rgb(23, 108, 191);
+    border: none;
+    background-color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    height: 36%;
+}
+
+#myBtn5 {
+    color: rgb(23, 108, 191);
+    border: none;
+    background-color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    height: 36%;
+}
+
+#myBtn3 {
+    color: rgb(23, 108, 191);
+    border: none;
+    background-color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    height: 36%;
+}
+
+#printBtn {
+    color: rgb(23, 108, 191);
+    border: none;
+    background-color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    float: right;
+    margin-right: 1%;
+    font-size: 15px;
+    margin-top: 0%;
+    width: 80px;
+}
+
+#printBtn2 {
+    color: white;
+    border: none;
+    background-color: rgb(23, 108, 191);
+    padding: 10px 10px;
+    text-decoration: none;
+    float: right;
+    margin-right: 1%;
+    font-size: 15px;
+    margin-top: 0%;
+    width: 80px;
+}
+
+.dropdown-container a {
+    font-size: 1.2vw;
+}
+
+.contentheader {
+    margin-left: 3%;
+    font-size: 1.75vw;
+    margin-top: 30px;
+    color: white;
+}
+
+.modal-table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-size: 20px;
+    height: 100%;
+}
+
+.modaldiv {
+    padding: 0px 10px;
+    font-family: sans-serif;
+    height: 80%;
+    overflow-x: hidden;
+}
+
+.modal-table td {
+    border-bottom: 1px solid #ddd;
+}
+
+.content-table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    font-size: 1.2vw;
+}
+
+input {
+    padding: 7px;
+    font-size: 17px;
+    font-family: Helvetica;
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+    width: 97%;
+}
+
+.input-Txt {
+    cursor: pointer;
+}
+
+.settingsIcon {
+    margin-top: -3px;
+    width: 17x;
+    height: 17px;
+}
+
+.logoutIco {
+    margin-top: -2px;
+}
+
+.content-table button {
+    border-radius: 3px;
+    width: 70px;
+    height: 40%;
+}
+
+#PBEL button {
+    height: 30%;
+}
+
+#hrefs {
+    font-size: 15px;
+}
+
+#nobtninput {
+    width: 97%;
+}
+
+.main select {
+    height: 40px;
+    width: 97%;
+}
+
+.consInqTable {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-left-style: solid 2px;
+}
+
+.consInqTable .modal-button {
+    color: white;
+    background-color: rgb(23, 108, 191);
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.consInq {
+    margin-top: -1.5%;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 569px;
+}
+
+.consInq td {
+    height: 35px;
+}
+
+.createConsTable {
+    width: 100%;
+}
+
+.createConsTable tr {
+    height: 40px;
+}
+
+.createConsTable .modal-button {
+    height: 33px;
+    font-size: 15px;
+}
+
+.appRen {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+}
+
+.appRen input {
+    width: 140px;
+}
+
+#consumerLedger .modal-content {
+    width: 87%;
+    height: 580px;
+    margin-top: -50px;
+    color: black;
+}
+
+#fees .modal-content {
+    width: 60%;
+    height: 60%;
+    margin-top: 3.5%;
+}
+
+.feesHeadDiv {
+    height: 40px;
+    width: 100%;
+    background-color: #5B9BD5;
+    color: white;
+}
+
+.feesHeadTable {
+    height: 40px;
+    width: 100%;
+}
+
+.feesTableDiv {
+    height: 200px;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.feesTable {
+    width: 100%;
+}
+
+.feesTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+#techDetails .modal-content {
+    width: 60%;
+    height: 95%;
+    margin-top: -2%;
+}
+
+#cancelledLedger .modal-content {
+    width: 85%;
+    height: 560px;
+    margin-top: -3%;
+    color: black;
+}
+
+#meterInfo .modal-content {
+    width: 65%;
+    height: 620px;
+    color: black;
+}
+
+.RTITable {
+    width: 100%;
+    color: black;
+}
+
+.RTITable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.RTI-button {
+    cursor: pointer;
+}
+
+#transformer .modal-content {
+    height: 640px;
+    margin-top: -5.5%;
+    width: 50%;
+    color: black;
+}
+
+#transform .modal-content {
+    width: 70%;
+    height: 100%;
+    margin-top: -4%;
+}
+
+#serviceDrop .modal-content {
+    width: 50%;
+    height: 75%;
+}
+
+#famBackInfo .modal-content {
+    width: 65%;
+    height: 80%;
+}
+
+#otherCharges .modal-content {
+    width: 50%;
+    height: 500px;
+}
+
+.otherChargesTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.consumerLedgerTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cancelledLedgerTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.add-display {
+    display: block;
+}
+
+.remove-display {
+    display: none;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.powerBill1stTable {
+    width: 95%;
+    height: 100%;
+    font-size: 17px;
+}
+
+.accountTable {
+    width: 95%;
+    height: 90%;
+}
+
+.adjustmentTable {
+    width: 95%;
+    height: 90%;
+}
+
+.adjustmentTable2 {
+    height: 90%;
+    width: 95%;
+}
+
+.chargesTable button {
+    height: 90%;
+    margin-right: 10px;
+}
+
+.chargesTable {
+    width: 95%;
+    height: 90%;
+}
+
+.adjustmentTable2 {
+    height: 90%;
+    width: 95%;
+}
+
+.preCheAppTable input {
+    height: 37px;
+    width: 90%;
+    margin-left: 4%;
+}
+
+.checkcheck {
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+}
+
+.preCheAppTable tr {
+    height: 40px;
+}
+
+.powerBllAdjTable input {
+    height: 35px;
+}
+
+.powerBllAdjTable tr {
+    height: 40px;
+}
+
+.streetLightTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+#meterHistory .modal-content {
+    width: 60%;
+    height: 500px;
+    color: black;
+}
+
+.meterHistMainTable {
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.meterHistTableHead {
+    background-color: #5B9BD5;
+    color: white;
+}
+
+.TSMTable input {
+    height: 30px;
+}
+
+.amountTable {
+    float: right;
+    margin-right: -8px;
+    margin-top: 10px;
+}
+
+.amountTable input {
+    height: 35px;
+}
+
+.amountTable select {
+    height: 35px;
+}
+
+.CMATable {
+    width: 100%;
+    color: black;
+    font-size: 15px;
+}
+
+.CMATable td {
+    height: 35px;
+    border-bottom: 1px solid #ddd;
+}
+
+.modConsTable {
+    width: 100%;
+    color: black;
+    font-size: 15px;
+}
+
+.TNBCTable {
+    color: black;
+    width: 100%;
+}
+
+.TNBCTable td {
+    height: 35px;
+    border-bottom: 1px solid #ddd;
+}
+
+#collectionNB input {
+    height: 35px;
+}
+
+#collectionNB tr {
+    height: 10px;
+}
+
+.torTable input {
+    height: 35px;
+}
+
+.torTable tr {
+    height: 20px;
+}
+
+.modConsTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.meterHistTable {
+    width: 99%;
+    margin-top: auto;
+    margin-right: auto;
+    height: 40px;
+}
+
+.meterInqTable {
+    height: 202px;
+    overflow-x: hidden;
+}
+
+.meterHistTable {
+    width: 100%;
+    margin-top: auto;
+    margin-right: auto;
+    height: 40px;
+}
+
+.meterHistBtnDiv {
+    margin-top: 20px;
+    float: right;
+}
+
+.meterHistBtn {
+    width: 90px;
+    border: none;
+    background-color: rgb(23, 108, 191);
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 40px;
+}
+
+.meterHistTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ledgeHistTable {
+    width: 100%;
+}
+
+.ledgeHistTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.consHistTable {
+    width: 100%;
+    margin-top: auto;
+    margin-right: auto;
+    height: 40px;
+}
+
+.consHistTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.consHistHeadTable {
+    width: 99%;
+    margin-top: auto;
+    margin-right: auto;
+    height: 40px;
+}
+
+.consHistHeadDiv {
+    background-color: #5B9BD5;
+    color: white;
+}
+
+.consHistMainTable {
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#consumerHistory .modal-content {
+    width: 60%;
+    height: 500px;
+    margin-top: -1.5%;
+    color: black;
+}
+
+#meter .modal-content {
+    width: 80%;
+    height: 105%;
+    margin-top: -5%;
+}
+
+.consHistBtnDiv {
+    margin-top: 25px;
+    float: right;
+}
+
+.consHistBtn {
+    width: 90px;
+    border: none;
+    background-color: rgb(23, 108, 191);
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 40px;
+}
+
+#consumerInfo .modal-content {
+    width: 50%;
+    margin-top: -6%;
+    height: 110%;
+    color: black;
+}
+
+#ledgerHistory .modal-content {
+    margin-top: -2%;
+}
+
+.consInfoMainTable {
+    width: 100%;
+}
+
+.consInfoMainTable {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.consInfoTable {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.consInfoBtn {
+    width: 90px;
+    border: none;
+    background-color: rgb(23, 108, 191);
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 40px;
+}
+
+.consInfoBtnDiv {
+    float: right;
+    margin-top: 12px;
+}
+
+#katas .modal-content {
+    width: 60%;
+    height: 545px;
+    margin-top: -2%;
+    color: black;
+}
+
+.katasTableHead {
+    width: 98%;
+    height: 40px;
+}
+
+.katasMainTable {
+    width: 100%;
+}
+
+.katasTableHeadDiv {
+    background-color: #5B9BD5;
+    color: white;
+}
+
+.katasTableDiv {
+    height: 200px;
+    overflow-x: hidden;
+}
+
+.katasTable {
+    width: 100%;
+}
+
+.katasTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.katasBtnDiv {
+    margin-top: 30px;
+    float: right;
+}
+
+.katasBtn {
+    width: 90px;
+    border: none;
+    background-color: rgb(23, 108, 191);
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 40px;
+}
+
+#adjustment .modal-content {
+    width: 70%;
+    height: 545px;
+    margin-top: -2.5%;
+    color: black;
+}
+
+#feesPaid .modal-content {
+    width: 40%;
+    height: 370px;
+    margin-top: 1%;
+    color: black;
+}
+
+#advancePayment .modal-content {
+    width: 67%;
+    height: 540px;
+    margin-top: -2.5%;
+    color: black;
+}
+
+.ADVAT td {
+    height: 35px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ADVAT {
+    width: 100%;
+    color: black;
+}
+
+#accountsRcv .modal-content {
+    width: 60%;
+    height: 570px;
+    margin-top: -3%;
+    color: black;
+}
+
+#billDeposit .modal-content {
+    width: 50%;
+    height: 500px;
+    height: 100%;
+    margin-top: -3.5%;
+    color: black;
+}
+
+.billDepositTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+#printbutton {
+    display: block;
+}
+
+.consLedgeDiv {
+    height: 165px;
+    overflow-x: hidden;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.sumFFHeader {
+    width: 98%;
+}
+
+.sumFFHeaderDiv {
+    height: 40px;
+    width: 100%;
+    background-color: #5B9BD5;
+}
+
+.sumFFDiv {
+    width: 100%;
+    height: 230px;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+.sumFFTable {
+    width: 100%;
+    color: black;
+}
+
+.sumFFTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.MMRPC2HeaderDiv {
+    width: 100%;
+    background-color: #5B9BD5;
+    height: 40px;
+    color: white;
+}
+
+.MMRPC2HeaderTable {
+    width: 100%;
+    font-size: 15px;
+    height: 40px;
+}
+
+.MMRPC2Div {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+}
+
+.MMRPC2Table {
+    width: 100%;
+    color: black;
+    font-size: 15px;
+}
+
+.MMRPC2Table td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+#intDetails .modal-content {
+    width: 70%;
+}
+
+.intDetailsHeadDiv {
+    height: 40px;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5B9BD5;
+    color: white;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.intDetailsHeadTable {
+    height: 40px;
+    width: 100%;
+}
+
+.intDetailsDiv {
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    height: 85%;
+    overflow-x: hidden;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.intDetailsTable {
+    width: 100%;
+}
+
+.intDetailsTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+#accNo,
+#town,
+#route,
+#meterreader {
+    text-align: center;
+}
+
+.PCBPRTable input {
+    width: 95%;
+}
+
+.CDCRT1HeadDiv {
+    width: 97%;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5B9BD5;
+    color: white;
+}
+
+.CDCRT1HeadTable {
+    width: 100%;
+    height: 40px;
+}
+
+.CDCRT1TableDiv {
+    width: 97%;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.CDCRT1Table {
+    width: 100%;
+    color: black;
+}
+
+.CDCRT1Table td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.CDCRT2HeadDiv {
+    height: 40px;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5B9BD5;
+    color: white;
+}
+
+.CDCRT2HeadTable {
+    height: 40px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.CDCRT2TableDiv {
+    width: 99%;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.CDCRT2Table {
+    width: 100%;
+    color: black;
+    font-size: 15px;
+}
+
+.CDCRT2Table td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+#CMT input {
+    width: 80%;
+}
+
+.radio {
+    width: 25px;
+    height: 25px;
+    margin-top: 8px;
+    margin-left: 3px;
+}
+
+.ARTable {
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.ARTable input {
+    width: 90%;
+}
+
+ ::-webkit-scrollbar {
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.ARATRTable {
+    height: 100%;
+    width: 99%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.ARATRTable input {
+    width: 90%;
+}
+
+.immediateFam {
+    width: 100%;
+}
+
+.immediateFam td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-bottom: px;
+}
+
+.mainheadertxt {
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: -2px;
+}
+
+.headertxt {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+
+.headertxt2 {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: -1px;
+    margin-bottom: 0px;
+}
+
+.headerTable {
+    margin-left: 10px;
+}
+
+
+/* Style the header */
+
+.header {
+    background-color: #176cbf;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    flex: 1 1 33%;
+    padding: 0.5%;
+}
+
+.main_menus {
+    flex: 2 1 50%;
+}
+
+.user_icon {
+    flex: 3 1 10%;
+}
+
+.active {
+    background-color: green;
+    color: white;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px;
+    /* only for demonstration, should be removed */
+}
+
+.EMR-table {
+    width: 97%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+.EMR-table h6 {
+    margin-left: 3%;
+    font-size: 1vw;
+}
+
+#table td {
+    height: 70px;
+}
+
+.consInfoTable {
+    width: 97%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0%;
+    height: 100%;
+}
+
+.sidenav a,
+.dropdown-btn,
+.dropdown-btn2,
+.dropdown-btn3,
+.dropdown-btn4 {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 21.5px;
+    color: black;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none !important;
+}
+
+
+/* On mouse-over */
+
+.sidenav a:hover,
+.dropdown-btn:hover,
+.sidenav button:hover {
+    color: #fff;
+    font-size: 16px!important;
+}
+
+.back:hover {
+    color: #176cbf!important;
+}
+
+
+/* Main content */
+
+.main {
+    padding: 0px 10px;
+    overflow-x: hidden;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+/* Add an active class to the active dropdown button */
+
+.active {
+    background-color: #176cbf;
+    color: white;
+}
+
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+
+.dropdown-container {
+    display: none;
+}
+
+.dropdown-container2 {
+    display: none;
+}
+
+.dropdown-container3 {
+    display: none;
+}
+
+.dropdown-container4 {
+    display: none;
+}
+
+
+/* Optional: Style the caret down icon */
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.dropdown-container a {
+    font-size: 12px !important;
+}
+
+.sidenav {
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border: 1px;
+}
+
+
+/* Clear floats after the columns */
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 600px) {
+    nav,
+    article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.bodytable {
+    width: 100%;
+}
+
+@media screen and (max-width: 1980px) {
+    .consDetailTable {
+        margin-top: -40%;
+    }
+    .EMR-table {
+        height: 620px;
+    }
+    .profPic {
+        margin: 0;
+        position: absolute;
+        left: 96%;
+        top: 9%;
+        transform: translateY(-50%);
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    #PMRSCT {
+        margin-top: -4.5%;
+    }
+    .proPic {
+        margin: 0;
+        position: absolute;
+        left: 90%;
+        transform: translateY(-50%);
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .content {
+        height: 592px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .headerTable tr:nth-child(3) td:first-child {
+        display: none;
+    }
+    .headerTable tr:nth-child(3) td:nth-child(2) {
+        float: left;
+    }
+}
+
+.main-td {
+    /* background-image: url("/img/1.png");
+    background-repeat: no-repeat; */
+    background-position: fixed;
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+.consDetailTable {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.profPic {
+    width: 50px;
+    height: 50px;
+    background-image: url("/img/icon.png");
+    float: right;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: 100% 100%;
+    margin-top: -25px;
+    margin-bottom: -100px;
+    border-radius: 50px 50px 50px 50px;
+    margin-right: -250px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.changePassword {
+    font-size: 15px;
+    height: 40px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.changePassword:hover {
+    background-color: #ddd;
+}
+
+.logout {
+    font-size: 15px;
+    height: 40px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.logout:hover {
+    background-color: #ddd;
+}
+
+.transactionMenu {
+    color: white;
+    background-color: #176cbf;
+    margin-left: 60px;
+    padding: 6px 2px 3px 10px;
+    border: 0;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+.reportMenu {
+    display: inline;
+    color: white;
+    background-color: #176cbf;
+    margin-left: 20px;
+    padding: 6px 2px 3px 10px;
+    border: 0;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+.currentpage {
+    cursor: default;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 20%;
+}
+
+.maintenanceMenu {
+    display: inline;
+    color: white;
+    background-color: #176cbf;
+    margin-left: 20px;
+    padding: 6px 2px 3px 10px;
+    border: 0;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+.inquiryMenu {
+    display: inline;
+    color: white;
+    background-color: #176cbf;
+    margin-left: 20px;
+    padding: 6px 2px 3px 10px;
+    border: 0;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+.utilityMenu {
+    display: inline;
+    color: white;
+    background-color: #176cbf;
+    margin-left: 20px;
+    padding: 6px 2px 3px 2px;
+    border: 0px;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+.PMRSPrintBtn {
+    height: 40px;
+    float: right;
+    margin-right: 8px;
+    background-color: white;
+    color: #176cbf;
+    border: none;
+    border-radius: 3px;
+}
+
+.tranSubMenuDiv {
+    margin-left: -8px;
+    position: absolute;
+    margin-top: -20px;
+    background-color: white;
+    width: 19.9%;
+    height: 40px;
+}
+
+.tranSubMenu {
+    font-size: 2vw;
+    position: absolute;
+    color: blue;
+}
+
+.maintenanceSubMenuDiv {
+    margin-left: -8px;
+    position: absolute;
+    margin-top: -20px;
+    background-color: white;
+    width: 19.9%;
+    height: 40px;
+}
+
+.maintenanceSubMenu {
+    font-size: 2vw;
+    position: absolute;
+    color: blue;
+}
+
+.inquirySubMenuDiv {
+    margin-left: -8px;
+    position: absolute;
+    margin-top: -20px;
+    width: 19.9%;
+    height: 40px;
+}
+
+.inquirySubMenu {
+    font-size: 2vw;
+    position: absolute;
+    color: blue;
+}
+
+.content-heading {
+    color: white;
+    float: left;
+    margin-left: -22%;
+    margin-top: -30%;
+}
+
+.content2 {
+    height: 600px;
+}
+
+.sidebar-td {
+    width: 20%;
+    height: 100px;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: black;
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    width: 50%;
+    height: 70%;
+}
+
+#user {
+    background: none;
+}
+
+#user .modal-content {
+    float: right;
+    margin-right: 1%;
+    width: 15%;
+    margin-top: -0.5%;
+    height: 300px;
+    -webkit-animation-name: fade;
+    animation-name: fade;
+    height: 30%;
+}
+
+.modal-content h3 {
+    width: 100%;
+}
+
+#detailedCharges .modal-content {
+    width: 70%;
+    height: 100%;
+}
+
+.detailedChargesTable {
+    width: 100%;
+    font-size: 15px;
+}
+
+.detailedChargesTable table {
+    width: 99%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.detailedChargesTable td {
+    width: 33.33%;
+    height: 35px;
+}
+
+#userTable {
+    color: black;
+    height: 100%;
+    text-align: center;
+    width: 116%;
+    margin-left: -8%;
+}
+
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+
+/* The Close Button */
+
+.close,
+.closes {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.closes:hover,
+.close:focus,
+.closes:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.famBackInfoBtns td:hover {
+    cursor: pointer;
+}
+
+.modal-button:hover,
+.modal-button:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalBtn {
+    background-color: #176cbf;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    height: 90%;
+}
+
+.modal-header {
+    text-align: center;
+    color: white;
+    background-color: #176cbf;
+}
+
+.modal-body {
+    padding: 1% 16px;
+    height: 100%;
+}
+
+.modal-button {
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#routeCodesAddBtn {
+    height: 40px;
+    background-color: #176cbf;
+    color: white;
+    width: 20%;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 13px;
+}
+
+#printBtn {
+    color: #176cbf;
+    border: none;
+    background-color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    float: right;
+    margin-right: 1%;
+    font-size: 15px;
+    margin-top: 0%;
+    width: 80px;
+}
+
+#printBtn2 {
+    color: white;
+    border: none;
+    background-color: #176cbf;
+    padding: 10px 10px;
+    text-decoration: none;
+    float: right;
+    margin-right: 1%;
+    font-size: 15px;
+    margin-top: 0%;
+    width: 80px;
+}
+
+.dropdown-container a {
+    font-size: 1.2vw;
+}
+
+.contentheader {
+    margin-left: 3%;
+    font-size: 1.75vw;
+    margin-top: 30px;
+    color: white;
+}
+
+.modal-table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-size: 20px;
+    height: 100%;
+}
+
+.modaldiv {
+    padding: 0px 10px;
+    font-family: sans-serif;
+    height: 80%;
+    overflow-x: hidden;
+}
+
+.modal-table td {
+    border-bottom: 1px solid #ddd;
+}
+
+.content-table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    font-size: 1.2vw;
+}
+
+input {
+    padding: 7px;
+    font-size: 17px;
+    font-family: Helvetica;
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+    width: 97%;
+}
+
+.input-Txt {
+    cursor: pointer;
+}
+
+.settingsIcon {
+    margin-top: -3px;
+    width: 17x;
+    height: 17px;
+}
+
+.logoutIco {
+    margin-top: -2px;
+}
+
+.content-table button {
+    border-radius: 3px;
+    width: 70px;
+    height: 40%;
+}
+
+#PBEL button {
+    height: 30%;
+}
+
+#hrefs {
+    font-size: 15px;
+}
+
+#nobtninput {
+    width: 97%;
+}
+
+.main select {
+    height: 40px;
+    width: 97%;
+}
+
+.consInqTable {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-left-style: solid 2px;
+}
+
+.consInqTable .modal-button {
+    color: white;
+    background-color: #176cbf;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.consInq {
+    margin-top: -1.5%;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 569px;
+}
+
+.consInq td {
+    height: 35px;
+}
+
+.createConsTable {
+    width: 100%;
+}
+
+.createConsTable tr {
+    height: 40px;
+}
+
+.createConsTable .modal-button {
+    height: 33px;
+    font-size: 15px;
+}
+
+.appRen {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+}
+
+.appRen input {
+    width: 140px;
+}
+
+#consumerLedger .modal-content {
+    width: 87%;
+    height: 580px;
+    margin-top: -50px;
+    color: black;
+}
+
+#fees .modal-content {
+    width: 60%;
+    height: 60%;
+    margin-top: 3.5%;
+}
+
+.feesHeadDiv {
+    height: 40px;
+    width: 100%;
+    background-color: #5B9BD5;
+    color: white;
+}
+
+.feesHeadTable {
+    height: 40px;
+    width: 100%;
+}
+
+.feesTableDiv {
+    height: 200px;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.feesTable {
+    width: 100%;
+}
+
+.feesTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+#techDetails .modal-content {
+    width: 60%;
+    height: 95%;
+    margin-top: -2%;
+}
+
+#tbl {
+    font-size: 15px;
+    width: 100%;
+    overflow-x: scroll;
+    height: 200px;
+    background-color: white;
+}
+
+#myInput {
+    margin-left: 5px;
+    width: 200px;
+    margin-top: 1px;
+    margin-left: 10px;
+    display: none;
+}
+
+#cancelledLedger .modal-content {
+    width: 85%;
+    height: 560px;
+    margin-top: -3%;
+    color: black;
+}
+
+#meterInfo .modal-content {
+    width: 65%;
+    height: 620px;
+    color: black;
+}
+
+.RTITable {
+    width: 100%;
+    color: black;
+}
+
+.RTITable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.RTI-button {
+    cursor: pointer;
+}
+
+#transformer .modal-content {
+    height: 640px;
+    margin-top: -5.5%;
+    width: 50%;
+    color: black;
+}
+
+#transform .modal-content {
+    width: 70%;
+    height: 100%;
+    margin-top: -4%;
+}
+
+#serviceDrop .modal-content {
+    width: 50%;
+    height: 75%;
+}
+
+#famBackInfo .modal-content {
+    width: 65%;
+    height: 80%;
+}
+
+#table {
+    width: 100%;
+    border-right: 1px solid #555;
+}
+
+#table td {
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+#table th {
+    border-bottom: 1px solid black;
+}
+
+#tbl td {
+    border-bottom: 1px solid #ddd;
+    height: 70.2px;
+}
+
+.routeCodesBtns {
+    height: 38px;
+    background-color: #3d4144;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 25%;
+}
+
+#otherCharges .modal-content {
+    width: 50%;
+    height: 500px;
+}
+
+.otherChargesTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.consumerLedgerTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cancelledLedgerTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.add-display {
+    display: block;
+}
+
+.remove-display {
+    display: none;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.powerBill1stTable {
+    width: 95%;
+    height: 100%;
+    font-size: 17px;
+}
+
+.accountTable {
+    width: 95%;
+    height: 90%;
+}
+
+.adjustmentTable {
+    width: 95%;
+    height: 90%;
+}
+
+.adjustmentTable2 {
+    height: 90%;
+    width: 95%;
+}
+
+.chargesTable button {
+    height: 90%;
+    margin-right: 10px;
+}
+
+.chargesTable {
+    width: 95%;
+    height: 90%;
+}
+
+.adjustmentTable2 {
+    height: 90%;
+    width: 95%;
+}
+
+.preCheAppTable input {
+    height: 37px;
+    width: 90%;
+    margin-left: 4%;
+}
+
+.checkcheck {
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+}
+
+.preCheAppTable tr {
+    height: 40px;
+}
+
+.powerBllAdjTable input {
+    height: 35px;
+}
+
+.powerBllAdjTable tr {
+    height: 40px;
+}
+
+.streetLightTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+#meterHistory .modal-content {
+    width: 60%;
+    height: 500px;
+    color: black;
+}
+
+.meterHistMainTable {
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.meterHistTableHead {
+    background-color: #5B9BD5;
+    color: white;
+}
+
+.TSMTable input {
+    height: 30px;
+}
+
+.amountTable {
+    float: right;
+    margin-right: -8px;
+    margin-top: 10px;
+}
+
+.amountTable input {
+    height: 35px;
+}
+
+.amountTable select {
+    height: 35px;
+}
+
+.CMATable {
+    width: 100%;
+    color: black;
+    font-size: 15px;
+}
+
+.CMATable td {
+    height: 35px;
+    border-bottom: 1px solid #ddd;
+}
+
+.modConsTable {
+    width: 100%;
+    color: black;
+    font-size: 15px;
+}
+
+.TNBCTable {
+    color: black;
+    width: 100%;
+}
+
+.TNBCTable td {
+    height: 35px;
+    border-bottom: 1px solid #ddd;
+}
+
+#collectionNB input {
+    height: 35px;
+}
+
+#collectionNB tr {
+    height: 10px;
+}
+
+.torTable input {
+    height: 35px;
+}
+
+.torTable tr {
+    height: 20px;
+}
+
+.modConsTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.meterHistTable {
+    width: 99%;
+    margin-top: auto;
+    margin-right: auto;
+    height: 40px;
+}
+
+.meterInqTable {
+    height: 202px;
+    overflow-x: hidden;
+}
+
+.meterHistTable {
+    width: 100%;
+    margin-top: auto;
+    margin-right: auto;
+    height: 40px;
+}
+
+.meterHistBtnDiv {
+    margin-top: 20px;
+    float: right;
+}
+
+.meterHistBtn {
+    width: 90px;
+    border: none;
+    background-color: #176cbf;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 40px;
+}
+
+.meterHistTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ledgeHistTable {
+    width: 100%;
+}
+
+.ledgeHistTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.consHistTable {
+    width: 100%;
+    margin-top: auto;
+    margin-right: auto;
+    height: 40px;
+}
+
+.consHistTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.consHistHeadTable {
+    width: 99%;
+    margin-top: auto;
+    margin-right: auto;
+    height: 40px;
+}
+
+.consHistHeadDiv {
+    background-color: #5B9BD5;
+    color: white;
+}
+
+.consHistMainTable {
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#consumerHistory .modal-content {
+    width: 60%;
+    height: 500px;
+    margin-top: -1.5%;
+    color: black;
+}
+
+#meter .modal-content {
+    width: 80%;
+    height: 105%;
+    margin-top: -5%;
+}
+
+.consHistBtnDiv {
+    margin-top: 25px;
+    float: right;
+}
+
+.consHistBtn {
+    width: 90px;
+    border: none;
+    background-color: #176cbf;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 40px;
+}
+
+#consumerInfo .modal-content {
+    width: 50%;
+    margin-top: -6%;
+    height: 110%;
+    color: black;
+}
+
+#ledgerHistory .modal-content {
+    margin-top: -2%;
+}
+
+.consInfoMainTable {
+    width: 100%;
+}
+
+.consInfoMainTable {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.consInfoTable {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.consInfoBtn {
+    width: 90px;
+    border: none;
+    background-color: #176cbf;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 40px;
+}
+
+.consInfoBtnDiv {
+    float: right;
+    margin-top: 12px;
+}
+
+#katas .modal-content {
+    width: 60%;
+    height: 545px;
+    margin-top: -2%;
+    color: black;
+}
+
+.katasTableHead {
+    width: 98%;
+    height: 40px;
+}
+
+.katasMainTable {
+    width: 100%;
+}
+
+.katasTableHeadDiv {
+    background-color: #5B9BD5;
+    color: white;
+}
+
+.katasTableDiv {
+    height: 200px;
+    overflow-x: hidden;
+}
+
+.katasTable {
+    width: 100%;
+}
+
+.katasTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.katasBtnDiv {
+    margin-top: 30px;
+    float: right;
+}
+
+.katasBtn {
+    width: 90px;
+    border: none;
+    background-color: #176cbf;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 40px;
+}
+
+#adjustment .modal-content {
+    width: 70%;
+    height: 545px;
+    margin-top: -2.5%;
+    color: black;
+}
+
+#feesPaid .modal-content {
+    width: 40%;
+    height: 370px;
+    margin-top: 1%;
+    color: black;
+}
+
+#advancePayment .modal-content {
+    width: 67%;
+    height: 540px;
+    margin-top: -2.5%;
+    color: black;
+}
+
+.ADVAT td {
+    height: 35px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ADVAT {
+    width: 100%;
+    color: black;
+}
+
+#accountsRcv .modal-content {
+    width: 60%;
+    height: 570px;
+    margin-top: -3%;
+    color: black;
+}
+
+#billDeposit .modal-content {
+    width: 50%;
+    height: 500px;
+    height: 100%;
+    margin-top: -3.5%;
+    color: black;
+}
+
+.billDepositTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+#printbutton {
+    display: block;
+}
+
+.consLedgeDiv {
+    height: 165px;
+    overflow-x: hidden;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.sumFFHeader {
+    width: 98%;
+}
+
+.sumFFHeaderDiv {
+    height: 40px;
+    width: 100%;
+    background-color: #5B9BD5;
+}
+
+.sumFFDiv {
+    width: 100%;
+    height: 230px;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+.sumFFTable {
+    width: 100%;
+    color: black;
+}
+
+.sumFFTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.MMRPC2HeaderDiv {
+    width: 100%;
+    background-color: #5B9BD5;
+    height: 40px;
+    color: white;
+}
+
+.MMRPC2HeaderTable {
+    width: 100%;
+    font-size: 15px;
+    height: 40px;
+}
+
+.MMRPC2Div {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+}
+
+.MMRPC2Table {
+    width: 100%;
+    color: black;
+    font-size: 15px;
+}
+
+.MMRPC2Table td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+#intDetails .modal-content {
+    width: 70%;
+}
+
+.intDetailsHeadDiv {
+    height: 40px;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5B9BD5;
+    color: white;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.intDetailsHeadTable {
+    height: 40px;
+    width: 100%;
+}
+
+.intDetailsDiv {
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    height: 85%;
+    overflow-x: hidden;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.intDetailsTable {
+    width: 100%;
+}
+
+.intDetailsTable td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+#accNo,
+#town,
+#route,
+#meterreader {
+    text-align: center;
+}
+
+.PCBPRTable input {
+    width: 95%;
+}
+
+.CDCRT1HeadDiv {
+    width: 97%;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5B9BD5;
+    color: white;
+}
+
+.CDCRT1HeadTable {
+    width: 100%;
+    height: 40px;
+}
+
+.CDCRT1TableDiv {
+    width: 97%;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.CDCRT1Table {
+    width: 100%;
+    color: black;
+}
+
+.CDCRT1Table td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.CDCRT2HeadDiv {
+    height: 40px;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5B9BD5;
+    color: white;
+}
+
+.CDCRT2HeadTable {
+    height: 40px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.CDCRT2TableDiv {
+    width: 99%;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.CDCRT2Table {
+    width: 100%;
+    color: black;
+    font-size: 15px;
+}
+
+.CDCRT2Table td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+#CMT input {
+    width: 80%;
+}
+
+.radio {
+    width: 25px;
+    height: 25px;
+    margin-top: 8px;
+    margin-left: 3px;
+}
+
+.ARTable {
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.ARTable input {
+    width: 90%;
+}
+
+ ::-webkit-scrollbar {
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.ARATRTable {
+    height: 100%;
+    width: 99%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.ARATRTable input {
+    width: 90%;
+}
+
+.immediateFam {
+    width: 100%;
+}
+
+.immediateFam td {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    color: #000;
+}
+
+.content2 {
+    display: flex;
+    flex: 1;
+    color: #000;
+}
+
+.content3 {
+    display: flex;
+    flex: 5;
+    color: white;
+    width: 100%;
+}
+
+.content4 {
+    display: flex;
+    flex: 1;
+    color: #000;
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+        display: block;
+    }
+    table {
+        margin-bottom: 10px;
+    }
+    .content3 {
+        margin-left: 0;
+    }
+    .bodytable {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #accNo {
+        height: 800px;
+        width: 920px;
+        margin-left: -220px;
+    }
+}
+
+.btnToggle {
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.8s;
+}
+
+.parent:hover .btnToggle {
+    opacity: 1;
+}
+
+.parent {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+footer {
+    margin-top: -1%;
+    background: #176cbf;
+    width: 100%;
+    position: fixed;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    bottom: 0;
+    height: 37px;
+}
+
+footer div {
+    position: relative;
+    top: 33%;
+}
+
+.custom-control {
+    z-index: 0;
+}
+
+.main_menus div:hover {
+    background-color: #08286E;
+    cursor: pointer;
+}
+
+.main_menus div {
+    display: inline-block;
+    width: calc(87%/5);
+    height: 100%;
+    text-align: center;
+    margin-right: -5px;
+}
+
+.main_menus div p {
+    position: relative;
+    top: 30%;
+    color: #fff!important;
+}
+
+.active-main-menu {
+    background-color: #08286E;
+}
+
+.dropdown-scrollable {
+    height: auto;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+
+/*---paginate css--*/
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0!important;
+    z-index: 0!important;
+}
+
+.modal {
+    z-index: 10!important;
+}
+
+.dropdown-scrollable {
+    display: none;
+}
+
+.back {
+    width: 100%;
+    text-align: left;
+    padding-left: 5%;
+    margin-bottom: 9%;
+}
+
+.main-menu span {
+    margin-left: 5%;
+}
+
+.open {
+    background-color: #f9f9f9;
+    font-size: 18px;
+    font-weight: bold;
+    color: #176cbf;
+}
+
+.submenu {
+    display: none;
+}
+
+.tab-pane.fade.active.show {
+    padding: 3%;
+    background-color: #fff!important;
+    color: #000!important;
+}
+
+.nav-link {
+    color: #fff!important;
+}
+
+.nav-link.active {
+    color: #176cbf!important;
+}
+
+.tab-pane select {
+    width: 100%;
+}
+
+.swal2-container {
+    z-index: 2000060!important;
+}
